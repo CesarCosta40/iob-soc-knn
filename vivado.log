@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Nov 18 11:40:52 2020
+# Process ID: 9479
+# Current directory: /home/cesar/EComp/iob-soc-knn
+# Command line: vivado
+# Log file: /home/cesar/EComp/iob-soc-knn/vivado.log
+# Journal file: /home/cesar/EComp/iob-soc-knn/vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 18 11:48:06 2020...
