@@ -1,21 +1,22 @@
+Testing simulator icarus
 IOb-Bootloader: USE_DDR=0 RUN_DDR=0
 IOb-Bootloader: Restart CPU to run user program...
 
-Execution time: 5833us (583214 cycles @100MHz)
+Execution time: 5656us (565512 cycles @100MHz)
 
-3 7 3 7 
+2 8 4 6 
 X:2344		Y:-4386		Label:1
 X:-4331		Y:20887		Label:0
-X:22184		Y:-17701		Label:3
+X:22184		Y:-17701		Label:2
 X:-2511		Y:-7650		Label:1
 X:-3984		Y:24043		Label:1
 X:30077		Y:31374		Label:3
 X:24285		Y:31435		Label:3
 X:1540		Y:-13174		Label:1
-X:-32303		Y:-26269		Label:0
+X:-32303		Y:-26269		Label:3
 X:-24972		Y:-4089		Label:3
 X:-14515		Y:-16438		Label:3
-X:-31956		Y:15255		Label:3
+X:-31956		Y:15255		Label:1
 X:2105		Y:3402		Label:0
 X:-22871		Y:22647		Label:2
 X:11936		Y:16406		Label:3
