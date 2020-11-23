@@ -50,7 +50,7 @@ ifeq ($(SIMULATOR),ncsim)
 endif
 
 #simulator used in testing
-SIM_LIST:=icarus ncsim
+SIM_LIST:=icarus
 
 #
 #FPGA BOARD COMPILE & RUN
