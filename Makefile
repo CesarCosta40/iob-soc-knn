@@ -159,19 +159,19 @@ test-simulator:
 	echo "Testing simulator $(SIMULATOR)";echo Testing simulator $(SIMULATOR)>>test.log
 	make sim SIMULATOR=$(SIMULATOR) INIT_MEM=1 USE_DDR=0 RUN_DDR=0 TEST_LOG=1
 	cat $(SIM_DIR)/test.log >> test.log
-	make sim SIMULATOR=$(SIMULATOR) INIT_MEM=0 USE_DDR=0 RUN_DDR=0 TEST_LOG=1
-	cat $(SIM_DIR)/test.log >> test.log
-	make sim SIMULATOR=$(SIMULATOR) INIT_MEM=1 USE_DDR=1 RUN_DDR=0 TEST_LOG=1
-	cat $(SIM_DIR)/test.log >> test.log
-	make sim SIMULATOR=$(SIMULATOR) INIT_MEM=1 USE_DDR=1 RUN_DDR=1 TEST_LOG=1
-	cat $(SIM_DIR)/test.log >> test.log
-	make sim SIMULATOR=$(SIMULATOR) INIT_MEM=0 USE_DDR=1 RUN_DDR=1 TEST_LOG=1
-	cat $(SIM_DIR)/test.log >> test.log
+#	make sim SIMULATOR=$(SIMULATOR) INIT_MEM=0 USE_DDR=0 RUN_DDR=0 TEST_LOG=1
+#	cat $(SIM_DIR)/test.log >> test.log
+#	make sim SIMULATOR=$(SIMULATOR) INIT_MEM=1 USE_DDR=1 RUN_DDR=0 TEST_LOG=1
+#	cat $(SIM_DIR)/test.log >> test.log
+#	make sim SIMULATOR=$(SIMULATOR) INIT_MEM=1 USE_DDR=1 RUN_DDR=1 TEST_LOG=1
+#	cat $(SIM_DIR)/test.log >> test.log
+#	make sim SIMULATOR=$(SIMULATOR) INIT_MEM=0 USE_DDR=1 RUN_DDR=1 TEST_LOG=1
+#	cat $(SIM_DIR)/test.log >> test.log
 
 test-all-simulators:
 	@rm -f test.log
 	$(foreach s, $(SIM_LIST), make test-simulator SIMULATOR=$s;)
-	diff -q test.log test/test-sim.log
+	diff test.log test/test-sim.log
 	@echo SIMULATION TEST PASSED FOR $(SIM_LIST)
 
 #test on boards
