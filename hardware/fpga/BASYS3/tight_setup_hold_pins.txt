@@ -1,0 +1,21 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|                      clk |                      clk |                                                          system/cpu/picorv32_core/decoded_imm_uj_reg[9]/D|
+|                      clk |                      clk |                                                          system/cpu/picorv32_core/decoded_imm_uj_reg[5]/D|
+|                      clk |                      clk |                                                          system/cpu/picorv32_core/decoded_imm_uj_reg[8]/D|
+|                      clk |                      clk |                                                          system/cpu/picorv32_core/decoded_imm_uj_reg[6]/D|
+|                      clk |                      clk |                                                         system/cpu/picorv32_core/decoded_imm_uj_reg[29]/D|
+|                      clk |                      clk |                                                          system/cpu/picorv32_core/decoded_imm_uj_reg[7]/D|
+|                      clk |                      clk |                                                          system/cpu/picorv32_core/decoded_imm_uj_reg[2]/D|
+|                      clk |                      clk |                                                         system/cpu/picorv32_core/decoded_rs2_reg_rep[2]/D|
+|                      clk |                      clk |                                                         system/cpu/picorv32_core/decoded_imm_uj_reg[10]/D|
+|                      clk |                      clk |                                                         system/cpu/picorv32_core/decoded_rs2_reg_rep[0]/D|
+|                      clk |                      clk |                                                         system/cpu/picorv32_core/decoded_imm_uj_reg[11]/D|
+|                      clk |                      clk |                                                                  system/cpu/picorv32_core/instr_jal_reg/D|
+|                      clk |                      clk |                                                              system/cpu/picorv32_core/decoded_rd_reg[0]/D|
+|                      clk |                      clk |                                                             system/cpu/picorv32_core/mem_rdata_q_reg[6]/D|
+|                      clk |                      clk |                                                             system/cpu/picorv32_core/mem_rdata_q_reg[3]/D|
+|                      clk |                      clk |                                                              system/cpu/picorv32_core/decoded_rd_reg[3]/D|
+|                      clk |                      clk |                                                             system/cpu/picorv32_core/mem_rdata_q_reg[1]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
