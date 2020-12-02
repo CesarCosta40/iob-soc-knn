@@ -250,10 +250,10 @@ module system_tb;
 
 `include "cpu_tasks.v"
    
-   //finish simulation
-   //always @(posedge trap) begin
-   // #10 $display("Found CPU trap condition");
-   //$finish;
-   //end
-
+   /*finish simulation
+   always @(posedge trap) begin
+    #10 $display("Found CPU trap condition");
+   $finish;
+   end
+*/
 endmodule

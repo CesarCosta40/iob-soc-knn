@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
-[*] Wed Nov 25 11:16:04 2020
+[*] Tue Dec  1 19:52:43 2020
 [*]
 [dumpfile] "/home/cesar/EComp/iob-soc-knn/hardware/simulation/icarus/system.vcd"
-[dumpfile_mtime] "Wed Nov 25 11:15:31 2020"
-[dumpfile_size] 65557201
+[dumpfile_mtime] "Tue Dec  1 19:52:35 2020"
+[dumpfile_size] 400993268
 [savefile] "/home/cesar/EComp/iob-soc-knn/hardware/simulation/waves.gtkw"
-[timestart] 389334000
+[timestart] 671930000
 [size] 1853 1025
 [pos] -1 -1
-*-20.439247 394281000 14260000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-23.439247 705680000 14260000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] system_tb.
 [treeopen] system_tb.uut.
 [treeopen] system_tb.uut.cpu.
@@ -126,21 +126,31 @@ system_tb.uut.knn.ready
 system_tb.uut.knn.valid
 @22
 system_tb.uut.knn.rdata[31:0]
+@420
 system_tb.uut.knn.wdata[31:0]
 @200
 -KNN_CORE
+@24
+system_tb.uut.knn.sorter0.idx_cnt[7:0]
+@28
+system_tb.uut.knn.sorter0.ready
 @420
-system_tb.uut.knn.d0.DATA_OUT[31:0]
-system_tb.uut.knn.d0.result[31:0]
-system_tb.uut.knn.d0.sqr1[31:0]
-system_tb.uut.knn.d0.sqr2[31:0]
-system_tb.uut.knn.d0.sub1[31:0]
-system_tb.uut.knn.d0.sub2[31:0]
-@421
-system_tb.uut.knn.d0.DATA_OUT[31:0]
-system_tb.uut.knn.d0.DATA_X1[15:0]
-system_tb.uut.knn.d0.DATA_X2[15:0]
-system_tb.uut.knn.d0.DATA_Y1[15:0]
-system_tb.uut.knn.d0.DATA_Y2[15:0]
+system_tb.uut.knn.sorter0.DATA_X1[15:0]
+system_tb.uut.knn.sorter0.DATA_Y1[15:0]
+system_tb.uut.knn.sorter0.DATA_X2[15:0]
+system_tb.uut.knn.sorter0.DATA_Y2[15:0]
+@25
+system_tb.uut.knn.sorter0.DATA0_OUT_INT[32:0]
+system_tb.uut.knn.sorter0.DATA1_OUT_INT[32:0]
+system_tb.uut.knn.sorter0.DATA2_OUT_INT[32:0]
+system_tb.uut.knn.sorter0.DATA3_OUT_INT[32:0]
+@24
+system_tb.uut.knn.sorter0.idx0_out[7:0]
+system_tb.uut.knn.sorter0.idx1_out[7:0]
+system_tb.uut.knn.sorter0.idx2_out[7:0]
+system_tb.uut.knn.sorter0.idx3_out[7:0]
+@28
+system_tb.uut.knn.sorter0.rst
+system_tb.uut.knn.sorter0.SEL[1:0]
 [pattern_trace] 1
 [pattern_trace] 0

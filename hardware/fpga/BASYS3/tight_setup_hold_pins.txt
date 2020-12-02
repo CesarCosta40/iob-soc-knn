@@ -1,0 +1,33 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|                      clk |                      clk |                                                                system/knn/sorter0/DATA2_OUT_INT_reg[21]/D|
+|                      clk |                      clk |                                                                 system/knn/sorter0/DATA2_OUT_INT_reg[2]/D|
+|                      clk |                      clk |                                                                      system/knn/sorter0/idx3_out_reg[1]/D|
+|                      clk |                      clk |                                                                system/knn/sorter0/DATA2_OUT_INT_reg[19]/D|
+|                      clk |                      clk |                                                                 system/knn/sorter0/DATA2_OUT_INT_reg[1]/D|
+|                      clk |                      clk |                                                                 system/knn/sorter0/DATA3_OUT_INT_reg[5]/D|
+|                      clk |                      clk |                                                                system/knn/sorter0/DATA2_OUT_INT_reg[23]/D|
+|                      clk |                      clk |                                                                system/knn/sorter0/DATA3_OUT_INT_reg[23]/D|
+|                      clk |                      clk |                                                                system/knn/sorter0/DATA3_OUT_INT_reg[27]/D|
+|                      clk |                      clk |                                                                      system/knn/sorter0/idx1_out_reg[1]/D|
+|                      clk |                      clk |                                                                      system/knn/sorter0/idx2_out_reg[2]/D|
+|                      clk |                      clk |                                                                system/knn/sorter0/DATA2_OUT_INT_reg[24]/D|
+|                      clk |                      clk |                                                                system/knn/sorter0/DATA2_OUT_INT_reg[10]/D|
+|                      clk |                      clk |                                                                      system/knn/sorter0/idx3_out_reg[2]/D|
+|                      clk |                      clk |                                                                system/knn/sorter0/DATA2_OUT_INT_reg[18]/D|
+|                      clk |                      clk |                                                                system/knn/sorter0/DATA2_OUT_INT_reg[28]/D|
+|                      clk |                      clk |                                                                system/knn/sorter0/DATA2_OUT_INT_reg[31]/D|
+|                      clk |                      clk |                                                                system/knn/sorter0/DATA3_OUT_INT_reg[16]/D|
+|                      clk |                      clk |                                                                 system/knn/sorter0/DATA3_OUT_INT_reg[8]/D|
+|                      clk |                      clk |                                                                      system/knn/sorter0/idx3_out_reg[3]/D|
+|                      clk |                      clk |                                                                 system/knn/sorter0/DATA3_OUT_INT_reg[0]/D|
+|                      clk |                      clk |                                                                system/knn/sorter0/DATA3_OUT_INT_reg[13]/D|
+|                      clk |                      clk |                                                                system/knn/sorter0/DATA3_OUT_INT_reg[24]/D|
+|                      clk |                      clk |                                                                system/knn/sorter0/DATA2_OUT_INT_reg[30]/D|
+|                      clk |                      clk |                                                                      system/knn/sorter0/idx3_out_reg[4]/D|
+|                      clk |                      clk |                                                                 system/knn/sorter0/DATA2_OUT_INT_reg[0]/D|
+|                      clk |                      clk |                                                                system/knn/sorter0/DATA3_OUT_INT_reg[21]/D|
+|                      clk |                      clk |                                                                      system/knn/sorter0/idx2_out_reg[4]/D|
+|                      clk |                      clk |                                                                 system/knn/sorter0/DATA2_OUT_INT_reg[4]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
