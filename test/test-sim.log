@@ -2,26 +2,56 @@ Testing simulator icarus
 IOb-Bootloader: USE_DDR=0 RUN_DDR=0
 IOb-Bootloader: Restart CPU to run user program...
 
-Execution time: 5656us (565512 cycles @100MHz)
+Execution time: 21856us (2185531 cycles @100MHz)
 
-2 8 4 6 
-X:2344		Y:-4386		Label:1
-X:-4331		Y:20887		Label:0
-X:22184		Y:-17701		Label:2
-X:-2511		Y:-7650		Label:1
-X:-3984		Y:24043		Label:1
-X:30077		Y:31374		Label:3
-X:24285		Y:31435		Label:3
-X:1540		Y:-13174		Label:1
-X:-32303		Y:-26269		Label:3
-X:-24972		Y:-4089		Label:3
-X:-14515		Y:-16438		Label:3
-X:-31956		Y:15255		Label:1
-X:2105		Y:3402		Label:0
-X:-22871		Y:22647		Label:2
-X:11936		Y:16406		Label:3
-X:24445		Y:3311		Label:1
-X:12592		Y:-32061		Label:2
-X:3865		Y:-25226		Label:2
-X:-21560		Y:14451		Label:1
-X:12501		Y:-5386		Label:1
+5 10 24 11 
+X:-9843		Y:4262		Label:2
+X:-13681		Y:-9691		Label:2
+X:-12988		Y:15256		Label:1
+X:-14035		Y:6066		Label:2
+X:-13633		Y:-1055		Label:2
+X:3458		Y:-4893		Label:2
+X:-12716		Y:-14083		Label:1
+X:5794		Y:-5131		Label:3
+X:15788		Y:-4443		Label:2
+X:-14321		Y:8455		Label:2
+X:6598		Y:15658		Label:1
+X:-4041		Y:2074		Label:2
+X:12683		Y:-3124		Label:2
+X:13937		Y:13651		Label:1
+X:3493		Y:-9925		Label:3
+X:-3798		Y:-4845		Label:0
+X:-5697		Y:-15128		Label:3
+X:5149		Y:-7920		Label:3
+X:-5649		Y:14291		Label:1
+X:8857		Y:14984		Label:1
+X:-14839		Y:15259		Label:1
+X:5101		Y:-13390		Label:2
+X:-5938		Y:-13115		Label:3
+X:-16306		Y:-5536		Label:2
+X:3541		Y:9814		Label:1
+X:-14726		Y:3943		Label:3
+X:5667		Y:-7116		Label:3
+X:11477		Y:9259		Label:0
+X:10618		Y:3654		Label:2
+X:14339		Y:15661		Label:1
+X:-6714		Y:2287		Label:2
+X:69		Y:-11912		Label:3
+X:6471		Y:-9121		Label:2
+X:14882		Y:11075		Label:2
+X:15545		Y:7275		Label:2
+X:13676		Y:1885		Label:2
+X:-333		Y:1026		Label:3
+X:-2722		Y:-3237		Label:0
+X:14078		Y:-7305		Label:3
+X:-9523		Y:11020		Label:2
+X:-2320		Y:4888		Label:2
+X:-6847		Y:1830		Label:2
+X:-13894		Y:11180		Label:1
+X:-13231		Y:-2317		Label:2
+X:15579		Y:-8566		Label:2
+X:-5994		Y:-3523		Label:0
+X:11935		Y:6389		Label:0
+X:-12713		Y:-2801		Label:2
+X:12386		Y:5265		Label:2
+X:10216		Y:-6396		Label:3

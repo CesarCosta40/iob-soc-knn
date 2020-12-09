@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
-[*] Sun Dec  6 17:38:48 2020
+[*] Mon Dec  7 11:22:35 2020
 [*]
 [dumpfile] "/home/cesar/EComp/iob-soc-knn/hardware/simulation/icarus/system.vcd"
-[dumpfile_mtime] "Sun Dec  6 17:38:26 2020"
-[dumpfile_size] 107908736
+[dumpfile_mtime] "Mon Dec  7 11:18:02 2020"
+[dumpfile_size] 323687868
 [savefile] "/home/cesar/EComp/iob-soc-knn/hardware/simulation/waves.gtkw"
-[timestart] 499615000
+[timestart] 2328692000
 [size] 1853 1025
 [pos] -1 -1
-*-18.521606 501400000 14260000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-18.521606 2329706000 14260000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] system_tb.
 [treeopen] system_tb.uut.
 [treeopen] system_tb.uut.cpu.picorv32_core.
@@ -216,14 +216,26 @@ system_tb.uut.knn.wdata[31:0]
 @200
 >5148
 -KNN_CORE
-@25
+@24
 >0
 system_tb.uut.knn.DATA_OUT[7:0]
+@22
+system_tb.uut.knn.DATA_1[31:0]
+system_tb.uut.knn.DATA_2[31:0]
 @420
 system_tb.uut.knn.DATA_X1[15:0]
-system_tb.uut.knn.DATA_X2[15:0]
 system_tb.uut.knn.DATA_Y1[15:0]
+system_tb.uut.knn.DATA_X2[15:0]
 system_tb.uut.knn.DATA_Y2[15:0]
+@24
+system_tb.uut.knn.sorter0.DIST[32:0]
+@25
+system_tb.uut.knn.sorter0.idx_cnt[7:0]
+@28
+system_tb.uut.knn.sorter0.DONE
+@22
+system_tb.uut.knn.sorter0.SEL[3:0]
+system_tb.uut.knn.sorter0.idx_out[7:0]
 @28
 system_tb.clk
 [pattern_trace] 1

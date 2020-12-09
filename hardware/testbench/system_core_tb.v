@@ -269,12 +269,12 @@ module system_tb;
    wire [`SRAM_ADDR_W-1:0] sram_iaddr = uut.int_mem0.int_sram.i_addr;
    wire [`DATA_W-1:0] sram_irdata = uut.int_mem0.int_sram.i_rdata;
 
-   
+   /*
    always @(posedge sram_dwstrb)
       if(sram_daddr == 13'h3ffda)  begin
          #10 $display("Found CPU memory condition at %f : %x : %x", $time, sram_daddr, sram_dwdata );
          //$finish;
       end
    
-   
+   */
 endmodule
