@@ -2,11 +2,11 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Wed Dec  9 14:19:49 2020
-# Process ID: 20895
-# Current directory: /home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3
+# Start of session at: Wed Dec  9 14:04:02 2020
+# Process ID: 26737
+# Current directory: /home/teresa/Projeto_Ecomp/iob-soc-knn/hardware/fpga/BASYS3
 # Command line: vivado -nojournal -log vivado.log -mode batch -source synth_system.tcl -tclargs  ../../../submodules/UART/submodules/INTERCON/hardware/include  ../../../submodules/UART/hardware/include  ../../../submodules/TIMER/hardware/include  ../../../submodules/KNN/submodules/LIB/hardware/include  ../../../submodules/KNN/submodules/INTERCON/hardware/include   ../../../submodules/KNN/hardware/include  ../../../submodules/KNN/submodules/LIB/hardware/include  ../../../submodules/KNN/submodules/INTERCON/hardware/include  . ../../../hardware/include DDR_ADDR_W=30 BOOTROM_ADDR_W=14 SRAM_ADDR_W=16 FIRM_ADDR_W=16 CACHE_ADDR_W=24 INIT_MEM N_SLAVES=3 E=31  P=31 B=30 BAUD=115200 FREQ=100000000 UART=0 TIMER=1 KNN=2  DATA_W=32 ../../../submodules/CPU/hardware/src/picorv32.v ../../../submodules/CPU/hardware/src/iob_picorv32.v ../../../submodules/CACHE/submodules/MEM/sp_rom/sp_rom.v ../../../submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v ../../../submodules/UART/submodules/INTERCON/hardware/src/merge.v ../../../submodules/UART/submodules/INTERCON/hardware/src/split.v ../../../submodules/UART/hardware/src/iob_uart.v ../../../submodules/TIMER/hardware/src/iob_timer.v ../../../submodules/TIMER/hardware/src/timer.v ../../../submodules/KNN/hardware/src/sorter3.v ../../../submodules/KNN/hardware/src/dist.v ../../../submodules/KNN/hardware/src/iob_knn.v ../../../submodules/KNN/hardware/src/pipeline_sorter.v ../../../hardware/src/boot_ctr.v ../../../hardware/src/int_mem.v  ../../../hardware/src/sram.v  system.v ./verilog/top_system.v
-# Log file: /home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3/vivado.log
+# Log file: /home/teresa/Projeto_Ecomp/iob-soc-knn/hardware/fpga/BASYS3/vivado.log
 # Journal file: 
 #-----------------------------------------------------------
 source synth_system.tcl
@@ -103,18 +103,18 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 20905
+INFO: [Synth 8-7075] Helper process launched with PID 26766
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2121.441 ; gain = 0.000 ; free physical = 699 ; free virtual = 11738
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2080.684 ; gain = 0.000 ; free physical = 5670 ; free virtual = 13377
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top_system' [/home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3/verilog/top_system.v:4]
-INFO: [Synth 8-6157] synthesizing module 'system' [/home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3/system.v:13]
+INFO: [Synth 8-6157] synthesizing module 'top_system' [/home/teresa/Projeto_Ecomp/iob-soc-knn/hardware/fpga/BASYS3/verilog/top_system.v:4]
+INFO: [Synth 8-6157] synthesizing module 'system' [/home/teresa/Projeto_Ecomp/iob-soc-knn/hardware/fpga/BASYS3/system.v:13]
 	Parameter ADDR_W bound to: 32 - type: integer 
 	Parameter DATA_W bound to: 32 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'iob_picorv32' [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/iob_picorv32.v:28]
+INFO: [Synth 8-6157] synthesizing module 'iob_picorv32' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/iob_picorv32.v:28]
 	Parameter ADDR_W bound to: 32 - type: integer 
 	Parameter DATA_W bound to: 32 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'picorv32' [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:57]
+INFO: [Synth 8-6157] synthesizing module 'picorv32' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:57]
 	Parameter ENABLE_COUNTERS bound to: 1'b1 
 	Parameter ENABLE_COUNTERS64 bound to: 1'b1 
 	Parameter ENABLE_REGS_16_31 bound to: 1'b1 
@@ -159,185 +159,185 @@ INFO: [Synth 8-6157] synthesizing module 'picorv32' [/home/cesar/EComp/iob-soc-k
 	Parameter cpu_state_shift bound to: 8'b00000100 
 	Parameter cpu_state_stmem bound to: 8'b00000010 
 	Parameter cpu_state_ldmem bound to: 8'b00000001 
-INFO: [Synth 8-6157] synthesizing module 'picorv32_pcpi_fast_mul' [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:2271]
+INFO: [Synth 8-6157] synthesizing module 'picorv32_pcpi_fast_mul' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:2271]
 	Parameter EXTRA_MUL_FFS bound to: 0 - type: integer 
 	Parameter EXTRA_INSN_FFS bound to: 0 - type: integer 
 	Parameter MUL_CLKGATE bound to: 0 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:2308]
-INFO: [Synth 8-6155] done synthesizing module 'picorv32_pcpi_fast_mul' (1#1) [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:2271]
-INFO: [Synth 8-6157] synthesizing module 'picorv32_pcpi_div' [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:2373]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:2398]
-INFO: [Synth 8-6155] done synthesizing module 'picorv32_pcpi_div' (2#1) [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:2373]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:386]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:1496]
-INFO: [Synth 8-6155] done synthesizing module 'picorv32' (3#1) [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:57]
-WARNING: [Synth 8-7071] port 'mem_la_read' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/iob_picorv32.v:87]
-WARNING: [Synth 8-7071] port 'mem_la_write' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/iob_picorv32.v:87]
-WARNING: [Synth 8-7071] port 'mem_la_addr' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/iob_picorv32.v:87]
-WARNING: [Synth 8-7071] port 'mem_la_wdata' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/iob_picorv32.v:87]
-WARNING: [Synth 8-7071] port 'mem_la_wstrb' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/iob_picorv32.v:87]
-WARNING: [Synth 8-7023] instance 'picorv32_core' of module 'picorv32' has 27 connections declared, but only 22 given [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/iob_picorv32.v:87]
-INFO: [Synth 8-6155] done synthesizing module 'iob_picorv32' (4#1) [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/iob_picorv32.v:28]
-INFO: [Synth 8-6157] synthesizing module 'split' [/home/cesar/EComp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/split.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:2308]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32_pcpi_fast_mul' (1#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:2271]
+INFO: [Synth 8-6157] synthesizing module 'picorv32_pcpi_div' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:2373]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:2398]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32_pcpi_div' (2#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:2373]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:386]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:1496]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32' (3#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:57]
+WARNING: [Synth 8-7071] port 'mem_la_read' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/iob_picorv32.v:87]
+WARNING: [Synth 8-7071] port 'mem_la_write' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/iob_picorv32.v:87]
+WARNING: [Synth 8-7071] port 'mem_la_addr' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/iob_picorv32.v:87]
+WARNING: [Synth 8-7071] port 'mem_la_wdata' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/iob_picorv32.v:87]
+WARNING: [Synth 8-7071] port 'mem_la_wstrb' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/iob_picorv32.v:87]
+WARNING: [Synth 8-7023] instance 'picorv32_core' of module 'picorv32' has 27 connections declared, but only 22 given [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/iob_picorv32.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'iob_picorv32' (4#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/iob_picorv32.v:28]
+INFO: [Synth 8-6157] synthesizing module 'split' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/split.v:4]
 	Parameter DATA_W bound to: 32 - type: integer 
 	Parameter ADDR_W bound to: 32 - type: integer 
 	Parameter N_SLAVES bound to: 1 - type: integer 
 	Parameter P_SLAVES bound to: 67 - type: integer 
 	Parameter Nb bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'split' (5#1) [/home/cesar/EComp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/split.v:4]
-INFO: [Synth 8-6157] synthesizing module 'split__parameterized0' [/home/cesar/EComp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/split.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'split' (5#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/split.v:4]
+INFO: [Synth 8-6157] synthesizing module 'split__parameterized0' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/split.v:4]
 	Parameter DATA_W bound to: 32 - type: integer 
 	Parameter ADDR_W bound to: 32 - type: integer 
 	Parameter N_SLAVES bound to: 2 - type: integer 
 	Parameter P_SLAVES bound to: 67 - type: integer 
 	Parameter Nb bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'split__parameterized0' (5#1) [/home/cesar/EComp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/split.v:4]
-INFO: [Synth 8-6157] synthesizing module 'split__parameterized1' [/home/cesar/EComp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/split.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'split__parameterized0' (5#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/split.v:4]
+INFO: [Synth 8-6157] synthesizing module 'split__parameterized1' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/split.v:4]
 	Parameter DATA_W bound to: 32 - type: integer 
 	Parameter ADDR_W bound to: 32 - type: integer 
 	Parameter N_SLAVES bound to: 3 - type: integer 
 	Parameter P_SLAVES bound to: 66 - type: integer 
 	Parameter Nb bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'split__parameterized1' (5#1) [/home/cesar/EComp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/split.v:4]
-INFO: [Synth 8-6157] synthesizing module 'int_mem' [/home/cesar/EComp/iob-soc-knn/hardware/src/int_mem.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'split__parameterized1' (5#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/split.v:4]
+INFO: [Synth 8-6157] synthesizing module 'int_mem' [/home/teresa/Projeto_Ecomp/iob-soc-knn/hardware/src/int_mem.v:5]
 	Parameter ADDR_W bound to: 32 - type: integer 
 	Parameter DATA_W bound to: 32 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'split__parameterized2' [/home/cesar/EComp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/split.v:4]
+INFO: [Synth 8-6157] synthesizing module 'split__parameterized2' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/split.v:4]
 	Parameter DATA_W bound to: 32 - type: integer 
 	Parameter ADDR_W bound to: 32 - type: integer 
 	Parameter N_SLAVES bound to: 2 - type: integer 
 	Parameter P_SLAVES bound to: 66 - type: integer 
 	Parameter Nb bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'split__parameterized2' (5#1) [/home/cesar/EComp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/split.v:4]
-INFO: [Synth 8-6157] synthesizing module 'boot_ctr' [/home/cesar/EComp/iob-soc-knn/hardware/src/boot_ctr.v:5]
-INFO: [Synth 8-6157] synthesizing module 'sp_rom' [/home/cesar/EComp/iob-soc-knn/submodules/CACHE/submodules/MEM/sp_rom/sp_rom.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'split__parameterized2' (5#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/split.v:4]
+INFO: [Synth 8-6157] synthesizing module 'boot_ctr' [/home/teresa/Projeto_Ecomp/iob-soc-knn/hardware/src/boot_ctr.v:5]
+INFO: [Synth 8-6157] synthesizing module 'sp_rom' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CACHE/submodules/MEM/sp_rom/sp_rom.v:3]
 	Parameter DATA_W bound to: 32 - type: integer 
 	Parameter ADDR_W bound to: 12 - type: integer 
 	Parameter FILE bound to: boot.hex - type: string 
 	Parameter mem_init_file_int bound to: boot.hex - type: string 
-INFO: [Synth 8-3876] $readmem data file 'boot.hex' is read successfully [/home/cesar/EComp/iob-soc-knn/submodules/CACHE/submodules/MEM/sp_rom/sp_rom.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'sp_rom' (6#1) [/home/cesar/EComp/iob-soc-knn/submodules/CACHE/submodules/MEM/sp_rom/sp_rom.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'boot_ctr' (7#1) [/home/cesar/EComp/iob-soc-knn/hardware/src/boot_ctr.v:5]
-INFO: [Synth 8-6157] synthesizing module 'merge' [/home/cesar/EComp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/merge.v:5]
+INFO: [Synth 8-3876] $readmem data file 'boot.hex' is read successfully [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CACHE/submodules/MEM/sp_rom/sp_rom.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sp_rom' (6#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CACHE/submodules/MEM/sp_rom/sp_rom.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'boot_ctr' (7#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/hardware/src/boot_ctr.v:5]
+INFO: [Synth 8-6157] synthesizing module 'merge' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/merge.v:5]
 	Parameter N_MASTERS bound to: 2 - type: integer 
 	Parameter DATA_W bound to: 32 - type: integer 
 	Parameter ADDR_W bound to: 32 - type: integer 
 	Parameter Nb bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'merge' (8#1) [/home/cesar/EComp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/merge.v:5]
-INFO: [Synth 8-6157] synthesizing module 'sram' [/home/cesar/EComp/iob-soc-knn/hardware/src/sram.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'merge' (8#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/UART/submodules/INTERCON/hardware/src/merge.v:5]
+INFO: [Synth 8-6157] synthesizing module 'sram' [/home/teresa/Projeto_Ecomp/iob-soc-knn/hardware/src/sram.v:4]
 	Parameter FILE bound to: firmware - type: string 
 	Parameter file_suffix bound to: 858927408 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'iob_tdp_ram' [/home/cesar/EComp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:3]
+INFO: [Synth 8-6157] synthesizing module 'iob_tdp_ram' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:3]
 	Parameter MEM_INIT_FILE bound to: 112'b0110011001101001011100100110110101110111011000010111001001100101010111110011000000101110011010000110010101111000 
 	Parameter DATA_W bound to: 8 - type: integer 
 	Parameter ADDR_W bound to: 14 - type: integer 
 	Parameter mem_init_file_int bound to: 112'b0110011001101001011100100110110101110111011000010111001001100101010111110011000000101110011010000110010101111000 
-INFO: [Synth 8-3876] $readmem data file 'firmware_0.hex' is read successfully [/home/cesar/EComp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:35]
-INFO: [Synth 8-6155] done synthesizing module 'iob_tdp_ram' (9#1) [/home/cesar/EComp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:3]
-INFO: [Synth 8-6157] synthesizing module 'iob_tdp_ram__parameterized0' [/home/cesar/EComp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:3]
+INFO: [Synth 8-3876] $readmem data file 'firmware_0.hex' is read successfully [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'iob_tdp_ram' (9#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:3]
+INFO: [Synth 8-6157] synthesizing module 'iob_tdp_ram__parameterized0' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:3]
 	Parameter MEM_INIT_FILE bound to: 112'b0110011001101001011100100110110101110111011000010111001001100101010111110011000100101110011010000110010101111000 
 	Parameter DATA_W bound to: 8 - type: integer 
 	Parameter ADDR_W bound to: 14 - type: integer 
 	Parameter mem_init_file_int bound to: 112'b0110011001101001011100100110110101110111011000010111001001100101010111110011000100101110011010000110010101111000 
-INFO: [Synth 8-3876] $readmem data file 'firmware_1.hex' is read successfully [/home/cesar/EComp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:35]
-INFO: [Synth 8-6155] done synthesizing module 'iob_tdp_ram__parameterized0' (9#1) [/home/cesar/EComp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:3]
-INFO: [Synth 8-6157] synthesizing module 'iob_tdp_ram__parameterized1' [/home/cesar/EComp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:3]
+INFO: [Synth 8-3876] $readmem data file 'firmware_1.hex' is read successfully [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'iob_tdp_ram__parameterized0' (9#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:3]
+INFO: [Synth 8-6157] synthesizing module 'iob_tdp_ram__parameterized1' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:3]
 	Parameter MEM_INIT_FILE bound to: 112'b0110011001101001011100100110110101110111011000010111001001100101010111110011001000101110011010000110010101111000 
 	Parameter DATA_W bound to: 8 - type: integer 
 	Parameter ADDR_W bound to: 14 - type: integer 
 	Parameter mem_init_file_int bound to: 112'b0110011001101001011100100110110101110111011000010111001001100101010111110011001000101110011010000110010101111000 
-INFO: [Synth 8-3876] $readmem data file 'firmware_2.hex' is read successfully [/home/cesar/EComp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:35]
-INFO: [Synth 8-6155] done synthesizing module 'iob_tdp_ram__parameterized1' (9#1) [/home/cesar/EComp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:3]
-INFO: [Synth 8-6157] synthesizing module 'iob_tdp_ram__parameterized2' [/home/cesar/EComp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:3]
+INFO: [Synth 8-3876] $readmem data file 'firmware_2.hex' is read successfully [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'iob_tdp_ram__parameterized1' (9#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:3]
+INFO: [Synth 8-6157] synthesizing module 'iob_tdp_ram__parameterized2' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:3]
 	Parameter MEM_INIT_FILE bound to: 112'b0110011001101001011100100110110101110111011000010111001001100101010111110011001100101110011010000110010101111000 
 	Parameter DATA_W bound to: 8 - type: integer 
 	Parameter ADDR_W bound to: 14 - type: integer 
 	Parameter mem_init_file_int bound to: 112'b0110011001101001011100100110110101110111011000010111001001100101010111110011001100101110011010000110010101111000 
-INFO: [Synth 8-3876] $readmem data file 'firmware_3.hex' is read successfully [/home/cesar/EComp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:35]
-INFO: [Synth 8-6155] done synthesizing module 'iob_tdp_ram__parameterized2' (9#1) [/home/cesar/EComp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'sram' (10#1) [/home/cesar/EComp/iob-soc-knn/hardware/src/sram.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'int_mem' (11#1) [/home/cesar/EComp/iob-soc-knn/hardware/src/int_mem.v:5]
-INFO: [Synth 8-6157] synthesizing module 'iob_uart' [/home/cesar/EComp/iob-soc-knn/submodules/UART/hardware/src/iob_uart.v:4]
+INFO: [Synth 8-3876] $readmem data file 'firmware_3.hex' is read successfully [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'iob_tdp_ram__parameterized2' (9#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sram' (10#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/hardware/src/sram.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'int_mem' (11#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/hardware/src/int_mem.v:5]
+INFO: [Synth 8-6157] synthesizing module 'iob_uart' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/UART/hardware/src/iob_uart.v:4]
 	Parameter DATA_W bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'iob_uart' (12#1) [/home/cesar/EComp/iob-soc-knn/submodules/UART/hardware/src/iob_uart.v:4]
-INFO: [Synth 8-6157] synthesizing module 'iob_timer' [/home/cesar/EComp/iob-soc-knn/submodules/TIMER/hardware/src/iob_timer.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'iob_uart' (12#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/UART/hardware/src/iob_uart.v:4]
+INFO: [Synth 8-6157] synthesizing module 'iob_timer' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/TIMER/hardware/src/iob_timer.v:6]
 	Parameter ADDR_W bound to: 3 - type: integer 
 	Parameter DATA_W bound to: 32 - type: integer 
 	Parameter WDATA_W bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'timer_core' [/home/cesar/EComp/iob-soc-knn/submodules/TIMER/hardware/src/timer.v:5]
+INFO: [Synth 8-6157] synthesizing module 'timer_core' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/TIMER/hardware/src/timer.v:5]
 	Parameter DATA_W bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'timer_core' (13#1) [/home/cesar/EComp/iob-soc-knn/submodules/TIMER/hardware/src/timer.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'iob_timer' (14#1) [/home/cesar/EComp/iob-soc-knn/submodules/TIMER/hardware/src/iob_timer.v:6]
-INFO: [Synth 8-6157] synthesizing module 'iob_knn' [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/iob_knn.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'timer_core' (13#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/TIMER/hardware/src/timer.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'iob_timer' (14#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/TIMER/hardware/src/iob_timer.v:6]
+INFO: [Synth 8-6157] synthesizing module 'iob_knn' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/KNN/hardware/src/iob_knn.v:6]
 	Parameter ADDR_W bound to: 3 - type: integer 
 	Parameter DATA_W bound to: 32 - type: integer 
 	Parameter WDATA_W bound to: 32 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'pipeline_sorter' [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/pipeline_sorter.v:4]
+INFO: [Synth 8-6157] synthesizing module 'pipeline_sorter' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/KNN/hardware/src/pipeline_sorter.v:4]
 	Parameter W bound to: 32 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'dist_calc' [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/dist.v:4]
+INFO: [Synth 8-6157] synthesizing module 'dist_calc' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/KNN/hardware/src/dist.v:4]
 	Parameter W bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'dist_calc' (15#1) [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/dist.v:4]
-INFO: [Synth 8-6157] synthesizing module 'sorter' [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/sorter3.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'dist_calc' (15#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/KNN/hardware/src/dist.v:4]
+INFO: [Synth 8-6157] synthesizing module 'sorter' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/KNN/hardware/src/sorter3.v:4]
 	Parameter W bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sorter' (16#1) [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/sorter3.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'pipeline_sorter' (17#1) [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/pipeline_sorter.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'iob_knn' (18#1) [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/iob_knn.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system' (19#1) [/home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3/system.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'top_system' (20#1) [/home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3/verilog/top_system.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'sorter' (16#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/KNN/hardware/src/sorter3.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'pipeline_sorter' (17#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/KNN/hardware/src/pipeline_sorter.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'iob_knn' (18#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/KNN/hardware/src/iob_knn.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system' (19#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/hardware/fpga/BASYS3/system.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'top_system' (20#1) [/home/teresa/Projeto_Ecomp/iob-soc-knn/hardware/fpga/BASYS3/verilog/top_system.v:4]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2128.336 ; gain = 6.895 ; free physical = 735 ; free virtual = 11776
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2093.594 ; gain = 12.910 ; free physical = 5702 ; free virtual = 13402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2134.273 ; gain = 12.832 ; free physical = 742 ; free virtual = 11783
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2099.531 ; gain = 18.848 ; free physical = 5716 ; free virtual = 13416
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2134.273 ; gain = 12.832 ; free physical = 742 ; free virtual = 11783
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2099.531 ; gain = 18.848 ; free physical = 5716 ; free virtual = 13416
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2134.273 ; gain = 0.000 ; free physical = 731 ; free virtual = 11772
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2099.531 ; gain = 0.000 ; free physical = 5704 ; free virtual = 13404
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3/synth_system.xdc]
-Finished Parsing XDC File [/home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3/synth_system.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3/synth_system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_system_propImpl.xdc].
+Parsing XDC File [/home/teresa/Projeto_Ecomp/iob-soc-knn/hardware/fpga/BASYS3/synth_system.xdc]
+Finished Parsing XDC File [/home/teresa/Projeto_Ecomp/iob-soc-knn/hardware/fpga/BASYS3/synth_system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/teresa/Projeto_Ecomp/iob-soc-knn/hardware/fpga/BASYS3/synth_system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_system_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2240.102 ; gain = 0.000 ; free physical = 633 ; free virtual = 11674
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2240.344 ; gain = 0.000 ; free physical = 5608 ; free virtual = 13307
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2240.102 ; gain = 0.000 ; free physical = 633 ; free virtual = 11674
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2240.344 ; gain = 0.000 ; free physical = 5607 ; free virtual = 13306
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2240.102 ; gain = 118.660 ; free physical = 717 ; free virtual = 11758
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2240.344 ; gain = 159.660 ; free physical = 5690 ; free virtual = 13385
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2240.102 ; gain = 118.660 ; free physical = 717 ; free virtual = 11758
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2240.344 ; gain = 159.660 ; free physical = 5690 ; free virtual = 13385
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2240.102 ; gain = 118.660 ; free physical = 717 ; free virtual = 11758
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2240.344 ; gain = 159.660 ; free physical = 5690 ; free virtual = 13385
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'mem_rdata_word_reg' [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:390]
-WARNING: [Synth 8-327] inferring latch for variable 'mem_la_wdata_reg' [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:388]
-WARNING: [Synth 8-327] inferring latch for variable 'mem_la_wstrb_reg' [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:389]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_rdata_word_reg' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:390]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_la_wdata_reg' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:388]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_la_wstrb_reg' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:389]
 INFO: [Synth 8-3971] The signal "iob_tdp_ram:/ram_reg" was recognized as a true dual port RAM template.
 INFO: [Synth 8-3971] The signal "iob_tdp_ram__parameterized0:/ram_reg" was recognized as a true dual port RAM template.
 INFO: [Synth 8-3971] The signal "iob_tdp_ram__parameterized1:/ram_reg" was recognized as a true dual port RAM template.
 INFO: [Synth 8-3971] The signal "iob_tdp_ram__parameterized2:/ram_reg" was recognized as a true dual port RAM template.
-WARNING: [Synth 8-327] inferring latch for variable 'idx_out_reg' [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/sorter3.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'idx_out_reg' [/home/teresa/Projeto_Ecomp/iob-soc-knn/submodules/KNN/hardware/src/sorter3.v:35]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2240.102 ; gain = 118.660 ; free physical = 700 ; free virtual = 11743
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 2240.344 ; gain = 159.660 ; free physical = 5624 ; free virtual = 13326
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -498,7 +498,7 @@ INFO: [Synth 8-3971] The signal "system/int_mem0/int_sram/gen_main_mem_byte[1].m
 INFO: [Synth 8-3971] The signal "system/int_mem0/int_sram/gen_main_mem_byte[2].main_mem_byte/ram_reg" was recognized as a true dual port RAM template.
 INFO: [Synth 8-3971] The signal "system/int_mem0/int_sram/gen_main_mem_byte[3].main_mem_byte/ram_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 2240.102 ; gain = 118.660 ; free physical = 674 ; free virtual = 11730
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 2240.344 ; gain = 159.660 ; free physical = 5631 ; free virtual = 13351
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -559,13 +559,13 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 2240.102 ; gain = 118.660 ; free physical = 509 ; free virtual = 11565
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:16 . Memory (MB): peak = 2240.344 ; gain = 159.660 ; free physical = 5485 ; free virtual = 13197
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 2242.102 ; gain = 120.660 ; free physical = 503 ; free virtual = 11558
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 2240.344 ; gain = 159.660 ; free physical = 5476 ; free virtual = 13187
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -632,7 +632,7 @@ INFO: [Synth 8-7052] The timing for the instance system/int_mem0/boot_ctr0/sp_ro
 INFO: [Synth 8-7052] The timing for the instance system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 2279.156 ; gain = 157.715 ; free physical = 504 ; free virtual = 11559
+Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:01:23 . Memory (MB): peak = 2245.383 ; gain = 164.699 ; free physical = 5481 ; free virtual = 13192
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -650,37 +650,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 2282.125 ; gain = 160.684 ; free physical = 500 ; free virtual = 11556
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:29 . Memory (MB): peak = 2248.352 ; gain = 167.668 ; free physical = 5465 ; free virtual = 13191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 2282.125 ; gain = 160.684 ; free physical = 500 ; free virtual = 11556
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:01:29 . Memory (MB): peak = 2248.352 ; gain = 167.668 ; free physical = 5469 ; free virtual = 13195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 2282.125 ; gain = 160.684 ; free physical = 500 ; free virtual = 11556
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 2248.352 ; gain = 167.668 ; free physical = 5476 ; free virtual = 13192
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 2282.125 ; gain = 160.684 ; free physical = 500 ; free virtual = 11556
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 2248.352 ; gain = 167.668 ; free physical = 5478 ; free virtual = 13194
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 2282.125 ; gain = 160.684 ; free physical = 500 ; free virtual = 11556
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 2248.352 ; gain = 167.668 ; free physical = 5480 ; free virtual = 13195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 2282.125 ; gain = 160.684 ; free physical = 500 ; free virtual = 11556
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 2248.352 ; gain = 167.668 ; free physical = 5479 ; free virtual = 13195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -716,20 +716,20 @@ Report Cell Usage:
 |41    |OBUF     |     1|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 2282.125 ; gain = 160.684 ; free physical = 500 ; free virtual = 11556
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 2248.352 ; gain = 167.668 ; free physical = 5479 ; free virtual = 13194
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2282.125 ; gain = 54.855 ; free physical = 560 ; free virtual = 11616
-Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 2282.133 ; gain = 160.684 ; free physical = 560 ; free virtual = 11616
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:21 ; elapsed = 00:01:27 . Memory (MB): peak = 2248.352 ; gain = 26.855 ; free physical = 5537 ; free virtual = 13253
+Synthesis Optimization Complete : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 2248.359 ; gain = 167.668 ; free physical = 5536 ; free virtual = 13252
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2282.133 ; gain = 0.000 ; free physical = 636 ; free virtual = 11692
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2248.359 ; gain = 0.000 ; free physical = 5600 ; free virtual = 13327
 INFO: [Netlist 29-17] Analyzing 378 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [/home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3/synth_system.xdc]
-Finished Parsing XDC File [/home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3/synth_system.xdc]
+Parsing XDC File [/home/teresa/Projeto_Ecomp/iob-soc-knn/hardware/fpga/BASYS3/synth_system.xdc]
+Finished Parsing XDC File [/home/teresa/Projeto_Ecomp/iob-soc-knn/hardware/fpga/BASYS3/synth_system.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2282.133 ; gain = 0.000 ; free physical = 576 ; free virtual = 11633
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2280.367 ; gain = 0.000 ; free physical = 5546 ; free virtual = 13275
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 88 instances were transformed.
   LD => LDCE: 76 instances
@@ -738,7 +738,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 120 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 2282.133 ; gain = 160.797 ; free physical = 752 ; free virtual = 11808
+synth_design: Time (s): cpu = 00:01:42 ; elapsed = 00:01:44 . Memory (MB): peak = 2280.367 ; gain = 199.773 ; free physical = 5715 ; free virtual = 13444
 # opt_design
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
@@ -746,17 +746,17 @@ INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc
 Running DRC as a precondition to command opt_design
 
 Starting DRC Task
-INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2323.047 ; gain = 40.914 ; free physical = 753 ; free virtual = 11809
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2356.273 ; gain = 75.906 ; free physical = 5726 ; free virtual = 13444
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Ending Cache Timing Information Task | Checksum: 82a74e61
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2474.875 ; gain = 151.828 ; free physical = 472 ; free virtual = 11528
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2504.094 ; gain = 147.820 ; free physical = 5450 ; free virtual = 13163
 
 Starting Logic Optimization Task
 
@@ -765,39 +765,39 @@ INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
 Phase 1 Retarget | Checksum: 14d4bd8fd
 
-Time (s): cpu = 00:00:00.30 ; elapsed = 00:00:00.25 . Memory (MB): peak = 2607.812 ; gain = 0.000 ; free physical = 319 ; free virtual = 11379
+Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.46 . Memory (MB): peak = 2640.062 ; gain = 0.000 ; free physical = 5315 ; free virtual = 13028
 INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 2 cells
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 Phase 2 Constant propagation | Checksum: 1494caa03
 
-Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.30 . Memory (MB): peak = 2607.812 ; gain = 0.000 ; free physical = 319 ; free virtual = 11379
+Time (s): cpu = 00:00:00.89 ; elapsed = 00:00:00.57 . Memory (MB): peak = 2640.062 ; gain = 0.000 ; free physical = 5318 ; free virtual = 13031
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 3 Sweep
 Phase 3 Sweep | Checksum: 125cb7ed3
 
-Time (s): cpu = 00:00:00.50 ; elapsed = 00:00:00.45 . Memory (MB): peak = 2607.812 ; gain = 0.000 ; free physical = 319 ; free virtual = 11379
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.85 . Memory (MB): peak = 2640.062 ; gain = 0.000 ; free physical = 5316 ; free virtual = 13029
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
 
 Phase 4 BUFG optimization
 Phase 4 BUFG optimization | Checksum: 125cb7ed3
 
-Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:00.52 . Memory (MB): peak = 2607.812 ; gain = 0.000 ; free physical = 319 ; free virtual = 11379
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2640.062 ; gain = 0.000 ; free physical = 5316 ; free virtual = 13029
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
 Phase 5 Shift Register Optimization | Checksum: 125cb7ed3
 
-Time (s): cpu = 00:00:00.62 ; elapsed = 00:00:00.57 . Memory (MB): peak = 2607.812 ; gain = 0.000 ; free physical = 319 ; free virtual = 11379
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2640.062 ; gain = 0.000 ; free physical = 5319 ; free virtual = 13032
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
 Phase 6 Post Processing Netlist | Checksum: 125cb7ed3
 
-Time (s): cpu = 00:00:00.64 ; elapsed = 00:00:00.60 . Memory (MB): peak = 2607.812 ; gain = 0.000 ; free physical = 319 ; free virtual = 11379
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2640.062 ; gain = 0.000 ; free physical = 5318 ; free virtual = 13031
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 Opt_design Change Summary
 =========================
@@ -818,10 +818,10 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2607.812 ; gain = 0.000 ; free physical = 319 ; free virtual = 11379
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2640.062 ; gain = 0.000 ; free physical = 5318 ; free virtual = 13031
 Ending Logic Optimization Task | Checksum: 10f0ff118
 
-Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.74 . Memory (MB): peak = 2607.812 ; gain = 0.000 ; free physical = 319 ; free virtual = 11379
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2640.062 ; gain = 0.000 ; free physical = 5317 ; free virtual = 13030
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -841,10 +841,10 @@ Number of Flops added for Enable Generation: 2
 
 Ending PowerOpt Patch Enables Task | Checksum: 108253938
 
-Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 304 ; free virtual = 11364
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5297 ; free virtual = 13010
 Ending Power Optimization Task | Checksum: 108253938
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2816.664 ; gain = 208.852 ; free physical = 310 ; free virtual = 11371
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2949.992 ; gain = 309.930 ; free physical = 5302 ; free virtual = 13016
 
 Starting Final Cleanup Task
 
@@ -852,29 +852,29 @@ Starting Logic Optimization Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Ending Logic Optimization Task | Checksum: 139a320cc
 
-Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.50 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 322 ; free virtual = 11383
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.74 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5303 ; free virtual = 13016
 Ending Final Cleanup Task | Checksum: 139a320cc
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 322 ; free virtual = 11383
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5301 ; free virtual = 13014
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 322 ; free virtual = 11383
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5301 ; free virtual = 13014
 Ending Netlist Obfuscation Task | Checksum: 139a320cc
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 322 ; free virtual = 11383
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5301 ; free virtual = 13014
 INFO: [Common 17-83] Releasing license: Implementation
 23 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2816.664 ; gain = 534.531 ; free physical = 322 ; free virtual = 11383
+opt_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 2949.992 ; gain = 669.625 ; free physical = 5303 ; free virtual = 13016
 # place_design
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
-INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 Running DRC as a precondition to command place_design
-INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [DRC 23-27] Running DRC with 8 threads
 WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_0 has an input control pin system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_0/ADDRARDADDR[10] (net: system/int_mem0/boot_ctr0/sp_rom0/Q[7]) which is driven by a register (system/int_mem0/boot_ctr0/rom_r_addr_reg_rep[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_0 has an input control pin system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_0/ADDRARDADDR[11] (net: system/int_mem0/boot_ctr0/sp_rom0/Q[8]) which is driven by a register (system/int_mem0/boot_ctr0/rom_r_addr_reg_rep[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -900,42 +900,42 @@ INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 
 Starting Placer Task
-INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 320 ; free virtual = 11381
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5293 ; free virtual = 13006
 Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 7003b6d6
 
-Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 320 ; free virtual = 11381
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 320 ; free virtual = 11381
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5293 ; free virtual = 13006
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5291 ; free virtual = 13005
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 685e4f0c
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.65 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 303 ; free virtual = 11364
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.99 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5270 ; free virtual = 12984
 
 Phase 1.3 Build Placer Netlist Model
 Phase 1.3 Build Placer Netlist Model | Checksum: f628d477
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 312 ; free virtual = 11373
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5278 ; free virtual = 12991
 
 Phase 1.4 Constrain Clocks/Macros
 Phase 1.4 Constrain Clocks/Macros | Checksum: f628d477
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 312 ; free virtual = 11373
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5283 ; free virtual = 12996
 Phase 1 Placer Initialization | Checksum: f628d477
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 312 ; free virtual = 11373
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5279 ; free virtual = 12992
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
 Phase 2.1 Floorplanning | Checksum: 852a08a9
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 308 ; free virtual = 11369
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5291 ; free virtual = 13004
 
 Phase 2.2 Global Placement Core
 
@@ -953,7 +953,7 @@ INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was
 INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
 INFO: [Physopt 32-949] No candidate nets found for HD net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 297 ; free virtual = 11357
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5274 ; free virtual = 12987
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -976,53 +976,53 @@ Summary of Physical Synthesis Optimizations
 
 Phase 2.2.1 Physical Synthesis In Placer | Checksum: 12a8c826d
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 297 ; free virtual = 11357
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:16 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5278 ; free virtual = 12992
 Phase 2.2 Global Placement Core | Checksum: 1eebe98ea
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 296 ; free virtual = 11356
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:17 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5276 ; free virtual = 12989
 Phase 2 Global Placement | Checksum: 1eebe98ea
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 297 ; free virtual = 11357
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:17 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5274 ; free virtual = 12987
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
 Phase 3.1 Commit Multi Column Macros | Checksum: 2208c9d6f
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 297 ; free virtual = 11357
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:18 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5275 ; free virtual = 12988
 
 Phase 3.2 Commit Most Macros & LUTRAMs
 Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 17e004db6
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 299 ; free virtual = 11356
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:18 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5277 ; free virtual = 12991
 
 Phase 3.3 Area Swap Optimization
 Phase 3.3 Area Swap Optimization | Checksum: 1c6014cd0
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 299 ; free virtual = 11356
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:19 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5278 ; free virtual = 12992
 
 Phase 3.4 Pipeline Register Optimization
 Phase 3.4 Pipeline Register Optimization | Checksum: 15b233c68
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 299 ; free virtual = 11356
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:19 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5279 ; free virtual = 12989
 
 Phase 3.5 Small Shape Detail Placement
 Phase 3.5 Small Shape Detail Placement | Checksum: 17f1a3da3
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 299 ; free virtual = 11361
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:20 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5270 ; free virtual = 12984
 
 Phase 3.6 Re-assign LUT pins
 Phase 3.6 Re-assign LUT pins | Checksum: 1623625fc
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 299 ; free virtual = 11361
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:21 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5273 ; free virtual = 12987
 
 Phase 3.7 Pipeline Register Optimization
 Phase 3.7 Pipeline Register Optimization | Checksum: 1f3307ef2
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 299 ; free virtual = 11361
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:21 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5273 ; free virtual = 12987
 Phase 3 Detail Placement | Checksum: 1f3307ef2
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 299 ; free virtual = 11361
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:21 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5277 ; free virtual = 12991
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -1037,69 +1037,69 @@ Phase 4.1.1.1 BUFG Insertion
 Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
-INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 4 CPUs
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
 INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.709 | TNS=0.000 |
 Phase 1 Physical Synthesis Initialization | Checksum: 1d79f537d
 
-Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 296 ; free virtual = 11357
+Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5262 ; free virtual = 12976
 INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
 Ending Physical Synthesis Task | Checksum: 232521fcc
 
-Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 296 ; free virtual = 11357
+Time (s): cpu = 00:00:00.50 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5265 ; free virtual = 12980
 Phase 4.1.1.1 BUFG Insertion | Checksum: 1ba06fdc1
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 297 ; free virtual = 11358
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:22 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5269 ; free virtual = 12983
 INFO: [Place 30-746] Post Placement Timing Summary WNS=1.709. For the most accurate timing information please run report_timing.
 Phase 4.1.1 Post Placement Optimization | Checksum: 1cfe6da1c
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 297 ; free virtual = 11358
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:23 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5268 ; free virtual = 12982
 Phase 4.1 Post Commit Optimization | Checksum: 1cfe6da1c
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 297 ; free virtual = 11358
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:23 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5269 ; free virtual = 12984
 
 Phase 4.2 Post Placement Cleanup
 Phase 4.2 Post Placement Cleanup | Checksum: 1cfe6da1c
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 297 ; free virtual = 11358
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:23 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5267 ; free virtual = 12981
 
 Phase 4.3 Placer Reporting
 Phase 4.3 Placer Reporting | Checksum: 1cfe6da1c
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 297 ; free virtual = 11358
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:23 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5272 ; free virtual = 12987
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 297 ; free virtual = 11358
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5269 ; free virtual = 12983
 Phase 4.4 Final Placement Cleanup | Checksum: 12dfc555a
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 297 ; free virtual = 11358
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:23 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5272 ; free virtual = 12987
 Phase 4 Post Placement Optimization and Clean-Up | Checksum: 12dfc555a
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 297 ; free virtual = 11358
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:23 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5273 ; free virtual = 12987
 Ending Placer Task | Checksum: c6c83114
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 297 ; free virtual = 11358
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:23 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5269 ; free virtual = 12984
 INFO: [Common 17-83] Releasing license: Implementation
 28 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 302 ; free virtual = 11364
+place_design: Time (s): cpu = 00:01:14 ; elapsed = 00:00:25 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5273 ; free virtual = 12988
 # route_design
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
 Running DRC as a precondition to command route_design
-INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 
 
 Starting Routing Task
-INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
 Checksum: PlaceDB: ac07143a ConstDB: 0 ShapeSum: 1ac11cda RouteDB: 0
 
 Phase 1 Build RT Design
 Phase 1 Build RT Design | Checksum: fef17f2b
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 203 ; free virtual = 11264
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5160 ; free virtual = 12877
 Post Restoration Checksum: NetGraph: 5607602 NumContArr: f9910929 Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
@@ -1107,28 +1107,28 @@ Phase 2 Router Initialization
 Phase 2.1 Create Timer
 Phase 2.1 Create Timer | Checksum: fef17f2b
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 176 ; free virtual = 11238
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5133 ; free virtual = 12851
 
 Phase 2.2 Fix Topology Constraints
 Phase 2.2 Fix Topology Constraints | Checksum: fef17f2b
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 161 ; free virtual = 11223
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5098 ; free virtual = 12816
 
 Phase 2.3 Pre Route Cleanup
 Phase 2.3 Pre Route Cleanup | Checksum: fef17f2b
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 162 ; free virtual = 11222
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5101 ; free virtual = 12819
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
 Phase 2.4 Update Timing | Checksum: 1b17730da
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 151 ; free virtual = 11212
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5084 ; free virtual = 12802
 INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.831  | TNS=0.000  | WHS=-0.140 | THS=-30.520|
 
 Phase 2 Router Initialization | Checksum: 1bb32637a
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 151 ; free virtual = 11212
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5097 ; free virtual = 12816
 
 Router Utilization Summary
   Global Vertical Routing Utilization    = 0.00231205 %
@@ -1146,7 +1146,7 @@ Router Utilization Summary
 Phase 3 Initial Routing
 Phase 3 Initial Routing | Checksum: 12513aa5e
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 152 ; free virtual = 11209
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5102 ; free virtual = 12820
 
 Phase 4 Rip-up And Reroute
 
@@ -1161,10 +1161,10 @@ INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.847  | TNS=0.000  | WHS
 
 Phase 4.1 Global Iteration 0 | Checksum: 130a6760a
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 149 ; free virtual = 11209
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:25 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5097 ; free virtual = 12816
 Phase 4 Rip-up And Reroute | Checksum: 130a6760a
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 149 ; free virtual = 11209
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:25 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5098 ; free virtual = 12818
 
 Phase 5 Delay and Skew Optimization
 
@@ -1173,20 +1173,20 @@ Phase 5.1 Delay CleanUp
 Phase 5.1.1 Update Timing
 Phase 5.1.1 Update Timing | Checksum: 1a4094f8f
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 149 ; free virtual = 11209
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:25 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5097 ; free virtual = 12815
 INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.854  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
 Phase 5.1 Delay CleanUp | Checksum: 1a4094f8f
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 149 ; free virtual = 11209
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:25 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5096 ; free virtual = 12816
 
 Phase 5.2 Clock Skew Optimization
 Phase 5.2 Clock Skew Optimization | Checksum: 1a4094f8f
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 149 ; free virtual = 11209
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:25 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5100 ; free virtual = 12820
 Phase 5 Delay and Skew Optimization | Checksum: 1a4094f8f
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 149 ; free virtual = 11209
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:25 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5095 ; free virtual = 12814
 
 Phase 6 Post Hold Fix
 
@@ -1195,15 +1195,15 @@ Phase 6.1 Hold Fix Iter
 Phase 6.1.1 Update Timing
 Phase 6.1.1 Update Timing | Checksum: 177a536ac
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 149 ; free virtual = 11209
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:26 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5097 ; free virtual = 12816
 INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.854  | TNS=0.000  | WHS=0.051  | THS=0.000  |
 
 Phase 6.1 Hold Fix Iter | Checksum: 10c63d1d8
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 149 ; free virtual = 11209
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:26 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5096 ; free virtual = 12815
 Phase 6 Post Hold Fix | Checksum: 10c63d1d8
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 149 ; free virtual = 11209
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:26 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5095 ; free virtual = 12814
 
 Phase 7 Route finalize
 
@@ -1221,19 +1221,19 @@ Router Utilization Summary
 
 Phase 7 Route finalize | Checksum: 100c9c6ec
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 149 ; free virtual = 11209
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:26 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5096 ; free virtual = 12815
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
 Phase 8 Verifying routed nets | Checksum: 100c9c6ec
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 148 ; free virtual = 11208
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:26 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5094 ; free virtual = 12812
 
 Phase 9 Depositing Routes
 Phase 9 Depositing Routes | Checksum: 12d68c69c
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 147 ; free virtual = 11208
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:27 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5099 ; free virtual = 12817
 
 Phase 10 Post Router Timing
 INFO: [Route 35-57] Estimated Timing Summary | WNS=1.854  | TNS=0.000  | WHS=0.051  | THS=0.000  |
@@ -1241,24 +1241,22 @@ INFO: [Route 35-57] Estimated Timing Summary | WNS=1.854  | TNS=0.000  | WHS=0.0
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
 Phase 10 Post Router Timing | Checksum: 12d68c69c
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 147 ; free virtual = 11208
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:27 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5096 ; free virtual = 12815
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 169 ; free virtual = 11230
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:27 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5140 ; free virtual = 12856
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
 13 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 2816.664 ; gain = 0.000 ; free physical = 169 ; free virtual = 11230
-INFO: [Common 17-600] The following parameters have non-default value.
-general.maxThreads
+route_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:29 . Memory (MB): peak = 2949.992 ; gain = 0.000 ; free physical = 5134 ; free virtual = 12852
 # report_utilization
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-| Date         : Wed Dec  9 14:21:31 2020
-| Host         : cesar-All-Series running 64-bit Ubuntu 18.04.5 LTS
+| Date         : Wed Dec  9 14:07:18 2020
+| Host         : teresa-X580VD running 64-bit Ubuntu 20.04.1 LTS
 | Command      : report_utilization
 | Design       : top_system
 | Device       : 7a35tcpg236-1
@@ -1480,13 +1478,13 @@ Table of Contents
 
 # report_timing
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
-INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
 INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-| Date         : Wed Dec  9 14:21:32 2020
-| Host         : cesar-All-Series running 64-bit Ubuntu 18.04.5 LTS
+| Date         : Wed Dec  9 14:07:19 2020
+| Host         : teresa-X580VD running 64-bit Ubuntu 20.04.1 LTS
 | Command      : report_timing
 | Design       : top_system
 | Device       : 7a35t-cpg236
@@ -1561,8 +1559,8 @@ INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc
 Running DRC as a precondition to command write_bitstream
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.1/data/ip'.
-INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
 WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
 
  set_property CFGBVS value1 [current_design]
@@ -1610,7 +1608,7 @@ WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system/int_mem
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_1 has an input control pin system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_1/ADDRARDADDR[14] (net: system/int_mem0/boot_ctr0/sp_rom0/Q[11]) which is driven by a register (system/int_mem0/boot_ctr0/rom_r_addr_reg_rep[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 INFO: [Vivado 12-3199] DRC finished with 0 Errors, 37 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
-INFO: [Designutils 20-2272] Running write_bitstream with 4 threads.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
 Loading data files...
 Loading site data...
 Loading route data...
@@ -1620,10 +1618,10 @@ Creating bitstream...
 Writing bitstream ./synth_system.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] '/home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Wed Dec  9 14:21:48 2020. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-186] '/home/teresa/Projeto_Ecomp/iob-soc-knn/hardware/fpga/BASYS3/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Wed Dec  9 14:07:41 2020. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2020.1/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
 12 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 3150.734 ; gain = 334.070 ; free physical = 450 ; free virtual = 11215
+write_bitstream: Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 3191.832 ; gain = 241.840 ; free physical = 5098 ; free virtual = 12817
 # write_verilog -force synth_system.v
-INFO: [Common 17-206] Exiting Vivado at Wed Dec  9 14:21:49 2020...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  9 14:07:41 2020...

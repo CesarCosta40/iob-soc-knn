@@ -11,6 +11,9 @@ system.mk: system_config.mk
 
 include ./system.mk
 
+
+DEFINE+=-DHW_K=10
+
 #
 # SIMULATE
 #
