@@ -6,7 +6,7 @@ incdir:=-I
 include ../simulation.mk
 
 #simulator flags
-VLOG = iverilog -W all -g2005-sv $(INCLUDE) $(DEFINE) 
+VLOG = iverilog -W all -Wno-sensitivity-entire-array -g2005-sv $(INCLUDE) $(DEFINE) 
 
 #run the simulator
 run: $(VSRC) $(VHDR) firmware boot.hex
