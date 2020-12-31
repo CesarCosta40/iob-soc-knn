@@ -34,8 +34,11 @@ make [sim]
 
 Parameters can be passed in the command line overriding those in the system.mk file. For example:
 ```
-make [sim] INIT_MEM=0 RUN_DDR=1
+make [sim] INIT_MEM=0 RUN_DDR=1 N_SOLVERS=32 HW_K=10
 ```
+N_SOLVERS chooses the number of modules to solve many problems in parallel
+HW_K chooses the number of registers and comparators (should be equal to the number of neighbors for best performance)
+
 
 To clean the simulation directory:
 ```
