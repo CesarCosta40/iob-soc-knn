@@ -2,10 +2,10 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Sun Dec 27 20:13:29 2020
-# Process ID: 12100
+# Start of session at: Sun Jan  3 16:44:25 2021
+# Process ID: 11206
 # Current directory: /home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3
-# Command line: vivado -nojournal -log vivado.log -mode batch -source synth_system.tcl -tclargs  ../../../submodules/UART/submodules/INTERCON/hardware/include  ../../../submodules/UART/hardware/include  ../../../submodules/TIMER/hardware/include  ../../../submodules/KNN/submodules/LIB/hardware/include  ../../../submodules/KNN/submodules/INTERCON/hardware/include   ../../../submodules/KNN/hardware/include  ../../../submodules/KNN/submodules/LIB/hardware/include  ../../../submodules/KNN/submodules/INTERCON/hardware/include  . ../../../hardware/include DDR_ADDR_W=30 BOOTROM_ADDR_W=14 SRAM_ADDR_W=16 FIRM_ADDR_W=16 CACHE_ADDR_W=24 INIT_MEM N_SLAVES=3 E=31  P=31 B=30 BAUD=115200 FREQ=100000000 UART=0 TIMER=1 KNN=2  DATA_W=32  HW_K=10  N_SOLVERS=34 ../../../submodules/CPU/hardware/src/picorv32.v ../../../submodules/CPU/hardware/src/iob_picorv32.v ../../../submodules/CACHE/submodules/MEM/sp_rom/sp_rom.v ../../../submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v ../../../submodules/UART/submodules/INTERCON/hardware/src/merge.v ../../../submodules/UART/submodules/INTERCON/hardware/src/split.v ../../../submodules/UART/hardware/src/iob_uart.v ../../../submodules/TIMER/hardware/src/iob_timer.v ../../../submodules/TIMER/hardware/src/timer.v ../../../submodules/KNN/hardware/src/iob_knn.v ../../../submodules/KNN/hardware/src/mult.v ../../../submodules/KNN/hardware/src/dist.v ../../../submodules/KNN/hardware/src/modulo.v ../../../submodules/KNN/hardware/src/sorter3.v ../../../submodules/KNN/hardware/src/pipeline_sorter.v ../../../hardware/src/boot_ctr.v ../../../hardware/src/int_mem.v  ../../../hardware/src/sram.v  system.v ./verilog/top_system.v
+# Command line: vivado -nojournal -log vivado.log -mode batch -source synth_system.tcl -tclargs  ../../../submodules/UART/submodules/INTERCON/hardware/include  ../../../submodules/UART/hardware/include  ../../../submodules/TIMER/hardware/include  ../../../submodules/KNN/submodules/LIB/hardware/include  ../../../submodules/KNN/submodules/INTERCON/hardware/include   ../../../submodules/KNN/hardware/include  ../../../submodules/KNN/submodules/LIB/hardware/include  ../../../submodules/KNN/submodules/INTERCON/hardware/include  . ../../../hardware/include DDR_ADDR_W=30 BOOTROM_ADDR_W=14 SRAM_ADDR_W=16 FIRM_ADDR_W=16 CACHE_ADDR_W=24 INIT_MEM N_SLAVES=3 E=31  P=31 B=30 BAUD=115200 FREQ=100000000 UART=0 TIMER=1 KNN=2  DATA_W=32  HW_K=10  N_SOLVERS=31 ../../../submodules/CPU/hardware/src/picorv32.v ../../../submodules/CPU/hardware/src/iob_picorv32.v ../../../submodules/CACHE/submodules/MEM/sp_rom/sp_rom.v ../../../submodules/CACHE/submodules/MEM/tdp_ram/iob_tdp_ram.v ../../../submodules/UART/submodules/INTERCON/hardware/src/merge.v ../../../submodules/UART/submodules/INTERCON/hardware/src/split.v ../../../submodules/UART/hardware/src/iob_uart.v ../../../submodules/TIMER/hardware/src/iob_timer.v ../../../submodules/TIMER/hardware/src/timer.v ../../../submodules/KNN/hardware/src/mult.v ../../../submodules/KNN/hardware/src/sorter.v ../../../submodules/KNN/hardware/src/iob_knn.v ../../../submodules/KNN/hardware/src/dist.v ../../../submodules/KNN/hardware/src/modulo.v ../../../submodules/KNN/hardware/src/pipeline_sorter.v ../../../hardware/src/boot_ctr.v ../../../hardware/src/int_mem.v  ../../../hardware/src/sram.v  system.v ./verilog/top_system.v
 # Log file: /home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3/vivado.log
 # Journal file: 
 #-----------------------------------------------------------
@@ -96,16 +96,16 @@ source synth_system.tcl
 # }
 # read_xdc ./synth_system.xdc
 # synth_design -include_dirs $INCLUDE -verilog_define $DEFINE -part $PART -top $TOP
-Command: synth_design -include_dirs {../../../submodules/UART/submodules/INTERCON/hardware/include  ../../../submodules/UART/hardware/include  ../../../submodules/TIMER/hardware/include  ../../../submodules/KNN/submodules/LIB/hardware/include  ../../../submodules/KNN/submodules/INTERCON/hardware/include   ../../../submodules/KNN/hardware/include  ../../../submodules/KNN/submodules/LIB/hardware/include  ../../../submodules/KNN/submodules/INTERCON/hardware/include  . ../../../hardware/include} -verilog_define {DDR_ADDR_W=30 BOOTROM_ADDR_W=14 SRAM_ADDR_W=16 FIRM_ADDR_W=16 CACHE_ADDR_W=24 INIT_MEM N_SLAVES=3 E=31  P=31 B=30 BAUD=115200 FREQ=100000000 UART=0 TIMER=1 KNN=2  DATA_W=32  HW_K=10  N_SOLVERS=34} -part xc7a35tcpg236-1 -top top_system
+Command: synth_design -include_dirs {../../../submodules/UART/submodules/INTERCON/hardware/include  ../../../submodules/UART/hardware/include  ../../../submodules/TIMER/hardware/include  ../../../submodules/KNN/submodules/LIB/hardware/include  ../../../submodules/KNN/submodules/INTERCON/hardware/include   ../../../submodules/KNN/hardware/include  ../../../submodules/KNN/submodules/LIB/hardware/include  ../../../submodules/KNN/submodules/INTERCON/hardware/include  . ../../../hardware/include} -verilog_define {DDR_ADDR_W=30 BOOTROM_ADDR_W=14 SRAM_ADDR_W=16 FIRM_ADDR_W=16 CACHE_ADDR_W=24 INIT_MEM N_SLAVES=3 E=31  P=31 B=30 BAUD=115200 FREQ=100000000 UART=0 TIMER=1 KNN=2  DATA_W=32  HW_K=10  N_SOLVERS=31} -part xc7a35tcpg236-1 -top top_system
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12107
+INFO: [Synth 8-7075] Helper process launched with PID 11214
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2121.441 ; gain = 0.000 ; free physical = 768 ; free virtual = 10647
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2121.441 ; gain = 0.000 ; free physical = 1520 ; free virtual = 12484
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top_system' [/home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3/verilog/top_system.v:4]
 INFO: [Synth 8-6157] synthesizing module 'system' [/home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3/system.v:13]
@@ -273,11 +273,11 @@ INFO: [Synth 8-6157] synthesizing module 'iob_knn' [/home/cesar/EComp/iob-soc-kn
 	Parameter DATA_W bound to: 32 - type: integer 
 	Parameter WDATA_W bound to: 32 - type: integer 
 	Parameter HW_K bound to: 10 - type: integer 
-	Parameter N_SOLVERS bound to: 34 - type: integer 
+	Parameter N_SOLVERS bound to: 31 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'knn' [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/modulo.v:4]
 	Parameter W bound to: 32 - type: integer 
 	Parameter HW_K bound to: 10 - type: integer 
-	Parameter N_SOLVERS bound to: 34 - type: integer 
+	Parameter N_SOLVERS bound to: 31 - type: integer 
 	Parameter DATA_W bound to: 32 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'pipeline_sorter' [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/pipeline_sorter.v:4]
 	Parameter W bound to: 32 - type: integer 
@@ -288,28 +288,28 @@ INFO: [Synth 8-6157] synthesizing module 'mult' [/home/cesar/EComp/iob-soc-knn/s
 	Parameter W bound to: 32 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'mult' (15#1) [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/mult.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'dist_calc' (16#1) [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/dist.v:4]
-INFO: [Synth 8-6157] synthesizing module 'sorter' [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/sorter3.v:4]
+INFO: [Synth 8-6157] synthesizing module 'sorter' [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/sorter.v:4]
 	Parameter W bound to: 32 - type: integer 
 	Parameter HW_K bound to: 10 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sorter' (17#1) [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/sorter3.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'sorter' (17#1) [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/sorter.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'pipeline_sorter' (18#1) [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/pipeline_sorter.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'knn' (19#1) [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/modulo.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'iob_knn' (20#1) [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/iob_knn.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'system' (21#1) [/home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3/system.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'top_system' (22#1) [/home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3/verilog/top_system.v:4]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2121.441 ; gain = 0.000 ; free physical = 837 ; free virtual = 10718
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2121.441 ; gain = 0.000 ; free physical = 1545 ; free virtual = 12511
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2124.305 ; gain = 2.863 ; free physical = 846 ; free virtual = 10728
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2127.273 ; gain = 5.832 ; free physical = 1555 ; free virtual = 12522
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2124.305 ; gain = 2.863 ; free physical = 846 ; free virtual = 10728
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2127.273 ; gain = 5.832 ; free physical = 1555 ; free virtual = 12522
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.27 . Memory (MB): peak = 2124.305 ; gain = 0.000 ; free physical = 811 ; free virtual = 10693
+Netlist sorting complete. Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.27 . Memory (MB): peak = 2127.273 ; gain = 0.000 ; free physical = 1522 ; free virtual = 12489
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -320,26 +320,26 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2276.977 ; gain = 0.000 ; free physical = 665 ; free virtual = 10547
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2278.945 ; gain = 0.000 ; free physical = 1376 ; free virtual = 12342
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2276.977 ; gain = 0.000 ; free physical = 665 ; free virtual = 10547
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2278.945 ; gain = 0.000 ; free physical = 1376 ; free virtual = 12342
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2276.977 ; gain = 155.535 ; free physical = 819 ; free virtual = 10701
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2278.945 ; gain = 157.504 ; free physical = 1527 ; free virtual = 12493
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2276.977 ; gain = 155.535 ; free physical = 819 ; free virtual = 10701
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2278.945 ; gain = 157.504 ; free physical = 1527 ; free virtual = 12493
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2276.977 ; gain = 155.535 ; free physical = 819 ; free virtual = 10701
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2278.945 ; gain = 157.504 ; free physical = 1527 ; free virtual = 12493
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-327] inferring latch for variable 'mem_rdata_word_reg' [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:390]
 WARNING: [Synth 8-327] inferring latch for variable 'mem_la_wdata_reg' [/home/cesar/EComp/iob-soc-knn/submodules/CPU/hardware/src/picorv32.v:388]
@@ -351,9 +351,9 @@ INFO: [Synth 8-3971] The signal "iob_tdp_ram__parameterized2:/ram_reg" was recog
 WARNING: [Synth 8-327] inferring latch for variable 'sqr2_reg' [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/dist.v:67]
 WARNING: [Synth 8-327] inferring latch for variable 'sqr1_reg' [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/dist.v:62]
 WARNING: [Synth 8-327] inferring latch for variable 'a_int_reg' [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/dist.v:47]
-WARNING: [Synth 8-327] inferring latch for variable 'idx_out_reg' [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/sorter3.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'idx_out_reg' [/home/cesar/EComp/iob-soc-knn/submodules/KNN/hardware/src/sorter.v:42]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2276.977 ; gain = 155.535 ; free physical = 814 ; free virtual = 10699
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2278.945 ; gain = 157.504 ; free physical = 1523 ; free virtual = 12492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -361,32 +361,32 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input   63 Bit       Adders := 1     
-	   2 Input   33 Bit       Adders := 34    
+	   2 Input   33 Bit       Adders := 31    
 	   2 Input   32 Bit       Adders := 7     
 	   3 Input   32 Bit       Adders := 1     
-	   3 Input   16 Bit       Adders := 68    
+	   3 Input   16 Bit       Adders := 62    
 	   2 Input   16 Bit       Adders := 2     
 	   2 Input   14 Bit       Adders := 2     
 	   2 Input    5 Bit       Adders := 2     
 	   2 Input    4 Bit       Adders := 3     
-	   2 Input    3 Bit       Adders := 34    
+	   2 Input    3 Bit       Adders := 31    
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
 	               64 Bit    Registers := 2     
 	               63 Bit    Registers := 1     
 	               36 Bit    Registers := 1     
-	               33 Bit    Registers := 376   
-	               32 Bit    Registers := 121   
-	               16 Bit    Registers := 515   
+	               33 Bit    Registers := 343   
+	               32 Bit    Registers := 112   
+	               16 Bit    Registers := 470   
 	               14 Bit    Registers := 1     
 	               10 Bit    Registers := 1     
 	                8 Bit    Registers := 11    
 	                5 Bit    Registers := 6     
 	                4 Bit    Registers := 6     
-	                3 Bit    Registers := 36    
-	                2 Bit    Registers := 6     
-	                1 Bit    Registers := 415   
+	                3 Bit    Registers := 33    
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 419   
 +---Multipliers : 
 	              33x33  Multipliers := 1     
 +---RAMs : 
@@ -398,14 +398,14 @@ Detailed RTL Component Info :
 	   2 Input   69 Bit        Muxes := 10    
 	   3 Input   69 Bit        Muxes := 1     
 	   2 Input   63 Bit        Muxes := 2     
-	   2 Input   33 Bit        Muxes := 317   
+	   2 Input   33 Bit        Muxes := 321   
 	   4 Input   33 Bit        Muxes := 1     
 	   2 Input   32 Bit        Muxes := 44    
 	   7 Input   32 Bit        Muxes := 1     
 	   9 Input   32 Bit        Muxes := 2     
 	   3 Input   32 Bit        Muxes := 2     
 	   4 Input   32 Bit        Muxes := 2     
-	   2 Input   16 Bit        Muxes := 381   
+	   2 Input   16 Bit        Muxes := 379   
 	   2 Input   10 Bit        Muxes := 1     
 	   2 Input    8 Bit        Muxes := 3     
 	   9 Input    8 Bit        Muxes := 1     
@@ -419,8 +419,8 @@ Detailed RTL Component Info :
 	   6 Input    2 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 2     
 	   9 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 238   
-	  11 Input    1 Bit        Muxes := 34    
+	   2 Input    1 Bit        Muxes := 222   
+	  11 Input    1 Bit        Muxes := 31    
 	   4 Input    1 Bit        Muxes := 18    
 	   9 Input    1 Bit        Muxes := 25    
 	   6 Input    1 Bit        Muxes := 5     
@@ -468,7 +468,7 @@ INFO: [Synth 8-3971] The signal "top_system/int_mem0/int_sram/gen_main_mem_byte[
 INFO: [Synth 8-3971] The signal "top_system/int_mem0/int_sram/gen_main_mem_byte[2].main_mem_byte/ram_reg" was recognized as a true dual port RAM template.
 INFO: [Synth 8-3971] The signal "top_system/int_mem0/int_sram/gen_main_mem_byte[3].main_mem_byte/ram_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 2276.977 ; gain = 155.535 ; free physical = 745 ; free virtual = 10647
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 2278.945 ; gain = 157.504 ; free physical = 1464 ; free virtual = 12447
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -522,13 +522,13 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 2276.977 ; gain = 155.535 ; free physical = 585 ; free virtual = 10487
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 2278.945 ; gain = 157.504 ; free physical = 1292 ; free virtual = 12275
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 2276.977 ; gain = 155.535 ; free physical = 578 ; free virtual = 10480
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 2353.984 ; gain = 232.543 ; free physical = 1258 ; free virtual = 12241
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -595,7 +595,7 @@ INFO: [Synth 8-7052] The timing for the instance system/int_mem0/boot_ctr0/sp_ro
 INFO: [Synth 8-7052] The timing for the instance system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 2354.883 ; gain = 233.441 ; free physical = 467 ; free virtual = 10387
+Finished Technology Mapping : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 2396.586 ; gain = 275.145 ; free physical = 1196 ; free virtual = 12179
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -613,37 +613,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 2406.727 ; gain = 285.285 ; free physical = 458 ; free virtual = 10378
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 2413.781 ; gain = 292.340 ; free physical = 1187 ; free virtual = 12169
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 2406.727 ; gain = 285.285 ; free physical = 459 ; free virtual = 10379
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 2413.781 ; gain = 292.340 ; free physical = 1187 ; free virtual = 12170
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 2406.727 ; gain = 285.285 ; free physical = 439 ; free virtual = 10363
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 2413.781 ; gain = 292.340 ; free physical = 1175 ; free virtual = 12157
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 2406.727 ; gain = 285.285 ; free physical = 439 ; free virtual = 10363
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 2413.781 ; gain = 292.340 ; free physical = 1175 ; free virtual = 12157
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 2406.727 ; gain = 285.285 ; free physical = 443 ; free virtual = 10363
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 2413.781 ; gain = 292.340 ; free physical = 1174 ; free virtual = 12157
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 2406.727 ; gain = 285.285 ; free physical = 443 ; free virtual = 10363
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 2413.781 ; gain = 292.340 ; free physical = 1174 ; free virtual = 12157
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -660,50 +660,49 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |BUFG     |    12|
-|2     |CARRY4   |  2597|
-|3     |DSP48E1  |    38|
-|8     |LUT1     |   190|
-|9     |LUT2     |  3118|
-|10    |LUT3     | 15732|
-|11    |LUT4     | 11238|
-|12    |LUT5     |  1540|
-|13    |LUT6     |  2588|
-|14    |MUXF7    |   608|
-|15    |MUXF8    |    32|
-|16    |RAM32M   |    12|
-|17    |RAMB36E1 |    20|
-|37    |FDCE     |  1956|
-|38    |FDPE     |    30|
-|39    |FDRE     | 12796|
-|40    |FDSE     | 10894|
-|41    |LD       |  3332|
-|42    |IBUF     |     3|
-|43    |OBUF     |     1|
+|2     |CARRY4   |  2384|
+|3     |DSP48E1  |    35|
+|8     |LUT1     |   187|
+|9     |LUT2     |  2878|
+|10    |LUT3     | 14349|
+|11    |LUT4     | 11768|
+|12    |LUT5     |  1389|
+|13    |LUT6     |  2503|
+|14    |MUXF7    |   496|
+|15    |RAM32M   |    12|
+|16    |RAMB36E1 |    20|
+|36    |FDCE     |  1840|
+|37    |FDPE     |    31|
+|38    |FDRE     | 11745|
+|39    |FDSE     |  9931|
+|40    |LD       |  3044|
+|41    |IBUF     |     3|
+|42    |OBUF     |     1|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 2406.727 ; gain = 285.285 ; free physical = 443 ; free virtual = 10363
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 2413.781 ; gain = 292.340 ; free physical = 1174 ; free virtual = 12157
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 2406.727 ; gain = 132.613 ; free physical = 515 ; free virtual = 10435
-Synthesis Optimization Complete : Time (s): cpu = 00:01:13 ; elapsed = 00:01:18 . Memory (MB): peak = 2406.734 ; gain = 285.285 ; free physical = 515 ; free virtual = 10435
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 2413.781 ; gain = 140.668 ; free physical = 1246 ; free virtual = 12228
+Synthesis Optimization Complete : Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 2413.789 ; gain = 292.340 ; free physical = 1246 ; free virtual = 12228
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.46 . Memory (MB): peak = 2406.734 ; gain = 0.000 ; free physical = 563 ; free virtual = 10483
-INFO: [Netlist 29-17] Analyzing 6639 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.40 ; elapsed = 00:00:00.40 . Memory (MB): peak = 2413.789 ; gain = 0.000 ; free physical = 1292 ; free virtual = 12274
+INFO: [Netlist 29-17] Analyzing 5991 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [/home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3/synth_system.xdc]
 Finished Parsing XDC File [/home/cesar/EComp/iob-soc-knn/hardware/fpga/BASYS3/synth_system.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2439.945 ; gain = 0.000 ; free physical = 481 ; free virtual = 10402
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2439.562 ; gain = 0.000 ; free physical = 1212 ; free virtual = 12194
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 3344 instances were transformed.
-  LD => LDCE: 3332 instances
+  A total of 3056 instances were transformed.
+  LD => LDCE: 3044 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
 124 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:01:32 . Memory (MB): peak = 2439.945 ; gain = 318.609 ; free physical = 731 ; free virtual = 10652
+synth_design: Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 2439.562 ; gain = 318.227 ; free physical = 1452 ; free virtual = 12435
 # opt_design
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
@@ -715,54 +714,54 @@ INFO: [DRC 23-27] Running DRC with 4 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2483.836 ; gain = 43.891 ; free physical = 735 ; free virtual = 10656
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2483.453 ; gain = 43.891 ; free physical = 1455 ; free virtual = 12437
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: fad0aa5a
+Ending Cache Timing Information Task | Checksum: 9ff3baed
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2604.664 ; gain = 120.828 ; free physical = 410 ; free virtual = 10331
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2606.281 ; gain = 122.828 ; free physical = 1138 ; free virtual = 12120
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: a48a8042
+Phase 1 Retarget | Checksum: 1e6821747
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2728.633 ; gain = 0.000 ; free physical = 329 ; free virtual = 10250
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2723.281 ; gain = 0.000 ; free physical = 1056 ; free virtual = 12038
 INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 3 cells
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 9a108158
+Phase 2 Constant propagation | Checksum: 1ad2afd8d
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2728.633 ; gain = 0.000 ; free physical = 329 ; free virtual = 10250
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2723.281 ; gain = 0.000 ; free physical = 1056 ; free virtual = 12038
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: fd2502b4
+Phase 3 Sweep | Checksum: 16ceb0d62
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2728.633 ; gain = 0.000 ; free physical = 323 ; free virtual = 10244
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2723.281 ; gain = 0.000 ; free physical = 1049 ; free virtual = 12032
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
 
 Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: fd2502b4
+Phase 4 BUFG optimization | Checksum: 16ceb0d62
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2728.633 ; gain = 0.000 ; free physical = 323 ; free virtual = 10244
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2723.281 ; gain = 0.000 ; free physical = 1050 ; free virtual = 12032
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: fd2502b4
+Phase 5 Shift Register Optimization | Checksum: 16ceb0d62
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2728.633 ; gain = 0.000 ; free physical = 323 ; free virtual = 10244
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2723.281 ; gain = 0.000 ; free physical = 1050 ; free virtual = 12032
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: fd2502b4
+Phase 6 Post Processing Netlist | Checksum: 16ceb0d62
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2728.633 ; gain = 0.000 ; free physical = 324 ; free virtual = 10246
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2723.281 ; gain = 0.000 ; free physical = 1051 ; free virtual = 12033
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 Opt_design Change Summary
 =========================
@@ -783,10 +782,10 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2728.633 ; gain = 0.000 ; free physical = 323 ; free virtual = 10245
-Ending Logic Optimization Task | Checksum: 136aa1455
+Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2723.281 ; gain = 0.000 ; free physical = 1051 ; free virtual = 12034
+Ending Logic Optimization Task | Checksum: 1df2da085
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2728.633 ; gain = 0.000 ; free physical = 323 ; free virtual = 10245
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2723.281 ; gain = 0.000 ; free physical = 1051 ; free virtual = 12034
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -804,33 +803,33 @@ INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 4 newly gated: 0 Total Ports: 40
 Number of Flops added for Enable Generation: 2
 
-Ending PowerOpt Patch Enables Task | Checksum: 1d885c5d3
+Ending PowerOpt Patch Enables Task | Checksum: 1e3e44b42
 
-Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.24 . Memory (MB): peak = 3089.578 ; gain = 0.000 ; free physical = 376 ; free virtual = 10175
-Ending Power Optimization Task | Checksum: 1d885c5d3
+Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.21 . Memory (MB): peak = 3084.773 ; gain = 0.000 ; free physical = 990 ; free virtual = 11973
+Ending Power Optimization Task | Checksum: 1e3e44b42
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 3089.578 ; gain = 360.945 ; free physical = 415 ; free virtual = 10214
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 3084.773 ; gain = 361.492 ; free physical = 1029 ; free virtual = 12012
 
 Starting Final Cleanup Task
 
 Starting Logic Optimization Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Logic Optimization Task | Checksum: 12d583603
+Ending Logic Optimization Task | Checksum: 14d66890c
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 3089.578 ; gain = 0.000 ; free physical = 413 ; free virtual = 10213
-Ending Final Cleanup Task | Checksum: 12d583603
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 3084.773 ; gain = 0.000 ; free physical = 1029 ; free virtual = 12011
+Ending Final Cleanup Task | Checksum: 14d66890c
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3089.578 ; gain = 0.000 ; free physical = 413 ; free virtual = 10213
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3084.773 ; gain = 0.000 ; free physical = 1029 ; free virtual = 12011
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3089.578 ; gain = 0.000 ; free physical = 413 ; free virtual = 10213
-Ending Netlist Obfuscation Task | Checksum: 12d583603
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3084.773 ; gain = 0.000 ; free physical = 1029 ; free virtual = 12011
+Ending Netlist Obfuscation Task | Checksum: 14d66890c
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3089.578 ; gain = 0.000 ; free physical = 413 ; free virtual = 10213
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3084.773 ; gain = 0.000 ; free physical = 1029 ; free virtual = 12011
 INFO: [Common 17-83] Releasing license: Implementation
 23 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:27 . Memory (MB): peak = 3089.578 ; gain = 649.633 ; free physical = 413 ; free virtual = 10213
+opt_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:23 . Memory (MB): peak = 3084.773 ; gain = 645.211 ; free physical = 1029 ; free virtual = 12011
 # place_design
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
@@ -840,8 +839,7 @@ INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 Running DRC as a precondition to command place_design
 INFO: [DRC 23-27] Running DRC with 4 threads
-ERROR: [DRC UTLZ-1] Resource utilization: LUT as Logic over-utilized in Top Level Design (This design requires more LUT as Logic cells than are available in the target device. This design requires 20948 of such cell types but only 20800 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device. Please set tcl parameter "drc.disableLUTOverUtilError" to 1 to change this error to warning.)
-ERROR: [DRC UTLZ-1] Resource utilization: Slice LUTs over-utilized in Top Level Design (This design requires more Slice LUTs cells than are available in the target device. This design requires 20996 of such cell types but only 20800 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device. Please set tcl parameter "drc.disableLUTOverUtilError" to 1 to change this error to warning.)
+ERROR: [DRC UTLZ-1] Resource utilization: Slice LUTs over-utilized in Top Level Design (This design requires more Slice LUTs cells than are available in the target device. This design requires 20826 of such cell types but only 20800 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device. Please set tcl parameter "drc.disableLUTOverUtilError" to 1 to change this error to warning.)
 WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_0 has an input control pin system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_0/ADDRARDADDR[10] (net: system/int_mem0/boot_ctr0/sp_rom0/Q[7]) which is driven by a register (system/int_mem0/boot_ctr0/rom_r_addr_reg_rep[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_0 has an input control pin system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_0/ADDRARDADDR[11] (net: system/int_mem0/boot_ctr0/sp_rom0/Q[8]) which is driven by a register (system/int_mem0/boot_ctr0/rom_r_addr_reg_rep[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -863,15 +861,15 @@ WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system/int_mem
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_1 has an input control pin system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_1/ADDRARDADDR[12] (net: system/int_mem0/boot_ctr0/sp_rom0/Q[9]) which is driven by a register (system/int_mem0/boot_ctr0/rom_r_addr_reg_rep[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_1 has an input control pin system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_1/ADDRARDADDR[13] (net: system/int_mem0/boot_ctr0/sp_rom0/Q[10]) which is driven by a register (system/int_mem0/boot_ctr0/rom_r_addr_reg_rep[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_1 has an input control pin system/int_mem0/boot_ctr0/sp_rom0/rdata_reg_1/ADDRARDADDR[14] (net: system/int_mem0/boot_ctr0/sp_rom0/Q[11]) which is driven by a register (system/int_mem0/boot_ctr0/rom_r_addr_reg_rep[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-INFO: [Vivado_Tcl 4-198] DRC finished with 2 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-198] DRC finished with 1 Errors, 21 Warnings
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 ERROR: [Vivado_Tcl 4-23] Error(s) found during DRC. Placer not run.
 INFO: [Common 17-83] Releasing license: Implementation
-8 Infos, 21 Warnings, 0 Critical Warnings and 3 Errors encountered.
+8 Infos, 21 Warnings, 0 Critical Warnings and 2 Errors encountered.
 place_design failed
 ERROR: [Common 17-39] 'place_design' failed due to earlier errors.
 
     while executing
 "place_design"
     (file "synth_system.tcl" line 103)
-INFO: [Common 17-206] Exiting Vivado at Sun Dec 27 20:15:38 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun Jan  3 16:46:30 2021...

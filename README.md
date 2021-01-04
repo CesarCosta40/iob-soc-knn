@@ -1,10 +1,12 @@
-# IOb-SoC
+# IOb-SoC-Knn
 
 SoC template comprising an open-source RISC-V processor (picorv32), an internal
 SRAM memory subsystem, a UART (iob-uart), and an optional external DDR memory
 subsystem. If selected, an instruction L1 cache, a data L1 cache and a shared L2
 cache is added to the system. The L2 cache communicates with a DDR
 memory controller IP (not provided) using an AXI4 master bus.
+
+For more information on the Knn peripheral refer to the submodule README
 
 ## Clone the repository
 
