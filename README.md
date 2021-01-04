@@ -10,7 +10,7 @@ For more information on the Knn peripheral refer to the submodule README
 
 ## Clone the repository
 
-``git clone --recursive git@github.com:IObundle/iob-soc.git``
+``git clone --recursive git@github.com:CesarCosta40/iob-soc-knn.git``
 
 Access to Github by *ssh* is mandatory so that submodules can be updated.
 
@@ -36,9 +36,9 @@ make [sim]
 
 Parameters can be passed in the command line overriding those in the system.mk file. For example:
 ```
-make [sim] INIT_MEM=0 RUN_DDR=1 N_SOLVERS=32 HW_K=10
+make [sim] INIT_MEM=0 RUN_DDR=1 N_SOLVERS=30 HW_K=10
 ```
-N_SOLVERS chooses the number of modules to solve many problems in parallel
+N_SOLVERS chooses the number of modules to solve many problems in parallel.
 HW_K chooses the number of registers and comparators (should be equal to the number of neighbors for best performance)
 
 
